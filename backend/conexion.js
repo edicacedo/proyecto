@@ -10,4 +10,4 @@ miconexion.on('error',()=>{
     console.log("Hubo un error en la conexion con la base de datos");
 })
 
-module.exports = mongoose;
+module.exports = mongoose

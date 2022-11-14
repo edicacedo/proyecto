@@ -19,6 +19,6 @@ app.get('/',(req,res)=>{
 });
 
 //Inicializar el servidor
-app.listen(5000,function(){
+app.listen(1000,function(){
     console.log('Servidor funcionando puerto 5000');
 });
