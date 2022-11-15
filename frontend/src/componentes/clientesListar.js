@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React,{useEffect,useState} from 'react';
 import {Link} from 'react-router-dom';
+import ClientesBorrar from './clientesborrar';
 
 //Crear un método para trabajar
 function ClientesListar()
@@ -21,7 +22,7 @@ function ClientesListar()
                     <table className='table'>
                         <thead>
                             <tr>
-                                <td colSpan={5} align="right">
+                                <td colSpan={7} align="right">
                                     <Link to={'/clientesAgregar'}>
                                         <li className='btn btn-success'>Agregar Cliente</li>
                                     </Link>
@@ -33,6 +34,7 @@ function ClientesListar()
                                 <th>TELÉFONO</th>
                                 <th>DIRECCIÓN</th>
                                 <th>EMAIL</th>
+                                <th colSpan={2}>Controles</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,6 +46,8 @@ function ClientesListar()
                                         <td>{misclientes.direccion}</td>
                                         <td>{misclientes.telefono}</td>
                                         <td>{misclientes.email}</td>
+                                        <td align="center"><Link to={'/clientesseditar/${misclientes.id}'}><li className='btn btn-info'>Editar</li></Link></td>
+                                        <td align="center"><li className='btn btn-danger' onClick={()=>{ClientesBorrar(misclientes.id)}}>Borrar</li></td>
                                     </tr>
                                 ))
                             }
