@@ -1,0 +1,23 @@
+[
+    {
+        "id" : "1",
+        "id_cliente" : "1098345366",
+        "fecha" : "2022-10-19",
+        "valor" : 500000,
+        "activo": true
+    },
+    {
+        "id" : "2",
+        "id_cliente" : "1098241555",
+        "fecha" : "2022-10-05",
+        "valor" : 250000,
+        "activo": false
+    },
+    {
+        "id" : "3",
+        "id_cliente" : "1098241555",
+        "fecha" : "2022-10-20",
+        "valor" : 760000,
+        "activo": true
+    }     
+]
